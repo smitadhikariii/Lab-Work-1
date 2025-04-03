@@ -1,1 +1,1 @@
-# Lab-Work-1
+I tried to create branches so that my repo wuld be more readable but I couldnt do it in a proper manner. Hence, my branch Week-7 is the mst updated branch and has all the files necesssary up till now from week-2 to week-10. In the commits I have clearly mentioned which file is of which week and for which task so you can easily find the required files.
