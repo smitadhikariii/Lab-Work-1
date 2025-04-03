@@ -1,0 +1,154 @@
+
+<html>
+<head>
+    <title>JavaScript Exercises </title>
+</head>
+<body>
+    <h1>JavaScript Exercises 1-11</h1>
+
+    <div>
+        <h2>1. Variable Types</h2>
+        <div id="ex1"></div>
+        <script>
+            document.getElementById("ex1").innerHTML = 
+                "Number: 42<br>Float: 3.14<br>String: Hello World<br>Boolean: true";
+        </script>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>2. Prompt and Alert</h2>
+        <button onclick="
+            const name = prompt('Enter your name:');
+            const id = prompt('Enter student ID:');
+            alert(`Name: ${name}\nID: ${id}`);
+        ">Run Exercise 2</button>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>3. Grade Calculator</h2>
+        <button onclick="
+            const marks = prompt('Enter marks:');
+            let grade = 'Fail';
+            if (marks >= 80) grade = 'Distinction';
+            else if (marks >= 60) grade = 'First Division';
+            else if (marks >= 50) grade = 'Second Division';
+            else if (marks >= 40) grade = 'Third Division';
+            alert(`Grade: ${grade}`);
+        ">Check Grade</button>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>4. Day Finder</h2>
+        <button onclick="
+            const day = prompt('Enter day number (1-7):');
+            let dayName = 'Invalid';
+            if (day == 1) dayName = 'Sunday';
+            if (day == 2) dayName = 'Monday';
+            if (day == 3) dayName = 'Tuesday';
+            if (day == 4) dayName = 'Wednesday';
+            if (day == 5) dayName = 'Thursday';
+            if (day == 6) dayName = 'Friday';
+            if (day == 7) dayName = 'Saturday';
+            alert(`Day: ${dayName}`);
+        ">Find Day</button>
+    </div>
+    <hr>
+
+    <div>
+        <h2>5. Image Gallery</h2>
+        <div id="ex5"></div>
+        <script>
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById("ex5").innerHTML += 
+                    `<img src="${i}.jpg" width="100"> `;
+            }
+        </script>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>6. Multiplication Table</h2>
+        <div id="ex6"></div>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                document.getElementById("ex6").innerHTML += 
+                    `5 * ${i} = ${5*i}<br>`;
+            }
+        </script>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>7. Table with Alternate Colors</h2>
+        <table border="1">
+            <tr><th>S.N.</th><th>Name</th><th>Image</th></tr>
+            <script>
+                for (let i = 1; i <= 4; i++) {
+                    document.write(`
+                        <tr style="background-color:${i%2?'#eee':'#fff'}">
+                            <td>${i}</td>
+                            <td>Name ${i}</td>
+                            <td><img src="${i}.jpg" width="50"></td>
+                        </tr>
+                    `);
+                }
+            </script>
+        </table>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>8. Array Join</h2>
+        <button onclick="
+            const colors = ['Red','Green','White','Black'];
+            alert(colors.toString() + '\n' + colors.join() + '\n' + colors.join('+'));
+        ">Show Joins</button>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>9. Sum and Product</h2>
+        <button onclick="
+            const nums = [1,2,3,4,5];
+            let sum = 0, product = 1;
+            nums.forEach(n => { sum += n; product *= n; });
+            alert(`Sum: ${sum}\nProduct: ${product}`);
+        ">Calculate</button>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>10. Rectangle Area</h2>
+        <button onclick="
+            const l = prompt('Enter length:');
+            const b = prompt('Enter breadth:');
+            alert(`Area: ${l*b}`);
+        ">Calculate Area</button>
+    </div>
+    <hr>
+
+
+    <div>
+        <h2>11. Array Operations</h2>
+        <input type="number" id="numInput">
+        <button onclick="arr.push(document.getElementById('numInput').value)">Add</button>
+        <button onclick="
+            let output = '';
+            arr.forEach((n,i) => output += `Element ${i} = ${n}\n`);
+            alert(output || 'Array is empty');
+        ">Display</button>
+        <script>let arr = [];</script>
+    </div>
+</body>
+</html>
