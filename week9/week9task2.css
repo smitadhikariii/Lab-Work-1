@@ -1,0 +1,93 @@
+body {
+    font-family: Verdana, sans-serif;
+    color: #330000;
+    background-color: #00BFFF;
+    margin: 0;
+    padding: 20px;
+}
+
+.page-container {
+    border: 4px solid #00BFFF;
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tavern-header {
+    background-color: #ccaa66;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #330000;
+}
+
+.tavern-header h1 {
+    margin: 0;
+    color: #330000;
+}
+
+.tavern-logo {
+    max-width: 150px;
+    margin-top: 10px;
+    border: 3px solid #330000;
+}
+
+.main-layout {
+    display: flex;
+    min-height: 400px;
+}
+
+.tavern-nav {
+    background-color: #E8D882;
+    width: 200px;
+    padding: 20px;
+    border-right: 2px solid #330000;
+}
+
+.tavern-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tavern-nav li {
+    margin-bottom: 15px;
+}
+
+.tavern-nav a {
+    color: #330000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}
+
+.tavern-nav a:hover {
+    background-color: #ccaa66;
+}
+
+.tavern-content {
+    background-color: #f1e8b0;
+    flex: 1;
+    padding: 20px;
+}
+
+.tavern-content ul {
+    padding-left: 20px;
+}
+
+.tavern-address {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.tavern-footer {
+    background-color: #ccaa66;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #330000;
+}
+
+.tavern-footer p {
+    margin: 5px 0;
+    color: #330000;
+}

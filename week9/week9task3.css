@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5C94FC;
+    margin: 0;
+    padding: 20px;
+    background-image: url('background.png');
+    background-repeat: repeat;
+}
+
+.mario-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid #E52521;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.mario-header {
+    background-color: #E52521;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.mario-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.mario-nav {
+    background-color: #FBD000;
+    padding: 15px;
+    border-bottom: 3px solid #E52521;
+}
+
+.mario-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.mario-nav a {
+    color: #E52521;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.mario-contact {
+    text-align: center;
+    font-style: italic;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px dashed #E52521;
+}
+
+.contact-icon {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.mario-content {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.mario-section {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.mario-section h2 {
+    color: #E52521;
+    border-bottom: 2px solid #FBD000;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.section-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.mario-map {
+    width: 100%;
+    border: 3px solid #FBD000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.mario-section ul {
+    padding-left: 20px;
+}
+
+.mario-section li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.mario-footer {
+    background-color: #E52521;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+.mario-footer p {
+    margin: 5px 0;
+}
+
+.footer-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}

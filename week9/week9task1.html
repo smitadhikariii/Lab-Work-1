@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .table-wrapper {
+            width: fit-content;
+            border: 2px solid #333;
+        }
+
+        .table-head {
+            display: flex;
+        }
+
+        .head-cell {
+            width: 100px;
+            background-color: #ddd;
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .table-body {
+            display: flex;
+        }
+
+        .main-column {
+            width: 100px;
+            background-color: #add8e6;
+            border: 1px solid #333;
+            padding: 5px;
+        }
+
+        .side-columns {
+            width: 200px;
+        }
+
+        .top-cells {
+            display: flex;
+        }
+
+        .middle-cell {
+            width: 100px;
+            background-color: #ffd700;
+            border: 1px solid #333;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .end-cell {
+            width: 100px;
+            background-color: #ff4500;
+            border: 1px solid #333;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 700;
+            color: white;
+        }
+
+        .bottom-section {
+            background-color: #2e8b57;
+            border: 1px solid #333;
+            color: white;
+            padding: 5px;
+        }
+
+        .item-list {
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-wrapper">
+        <div class="table-head">
+            <div class="head-cell">Column 1</div>
+            <div class="head-cell">Column 2</div>
+            <div class="head-cell">Column 3</div>
+        </div>
+
+        <div class="table-body">
+            <div class="main-column">
+                <p>Numbered items:</p>
+                <ol class="item-list">
+                    <li>Able</li>
+                    <li>Baker</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                </ol>
+            </div>
+
+            <div class="side-columns">
+                <div class="top-cells">
+                    <div class="middle-cell">B</div>
+                    <div class="end-cell">C</div>
+                </div>
+
+                <div class="bottom-section">
+                    <p>An unnumbered list:</p>
+                    <ul class="item-list">
+                        <li>Pounds</li>
+                        <li>Dollars</li>
+                        <li>Euro</li>
+                        <li>Yen</li>
+                        <li>Roubles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
